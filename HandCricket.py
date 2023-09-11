@@ -53,7 +53,7 @@ while True:
     else:
         player = "bowler"
         robot = "batter"
-    print(f"\nPlayer 1 is the {player}\nPlayer 2 is the {robot}")
+    print(f"\nPlayer 1 is the {player}\nBot is the {robot}")
 
     score1 = 0
     score2 = 0
@@ -66,7 +66,7 @@ while True:
                 print("\nInvalid input !! Enter a valid input")
                 r = input("Enter a number between 1 to 9: ")
             b = bot()
-            print(f"Player2's number: {b}")
+            print(f"Bot's number: {b}")
             score1 += int(r)
             print(f"\n\tScore of player1: {score1}")
         else:
@@ -81,14 +81,14 @@ while True:
                 print("\nInvalid input !! Enter a valid input")
                 r = input("Enter a number between 1 to 9: ")
             b = bot()
-            print(f"Player2's number: {b}")
+            print(f"Bot's number: {b}")
             score2 += b
-            print(f"\n\tScore of player2: {score2}")
+            print(f"\n\tScore of Bot: {score2}")
         else:
-            print("\n\tPlayer2 is out")
+            print("\n\tBot is out")
 
     player, robot = robot, player
-    print(f"\nPlayer 1 is the {player}\nPlayer 2 is the {robot}")
+    print(f"\nPlayer 1 is the {player}\nBot is the {robot}")
     
     game = True
     if player == "bowler":
@@ -101,14 +101,14 @@ while True:
                     print("\nInvalid input !! Enter a valid input")
                     r = input("Enter a number between 1 to 9: ")
                 b = bot()
-                print(f"Player2's number: {b}")
+                print(f"Bot's number: {b}")
                 score2 += b
-                print(f"\n\tScore of player2: {score2}")
+                print(f"\n\tScore of Bot: {score2}")
                 if score1<score2:
-                    print("\n\tPlayer2 wins")
+                    print("\n\tBot wins")
                     game = False
             else:
-                print("\n\tPlayer2 is out")
+                print("\n\tBot is out")
                 print("\n\tPlayer1 wins")
                 break
 
@@ -122,7 +122,7 @@ while True:
                     print("\nInvalid input !! Enter a valid input")
                     r = input("Enter a number between 1 to 9: ")
                 b = bot()
-                print(f"Player2's number: {b}")
+                print(f"Bot's number: {b}")
                 score1 += int(r)
                 print(f"\n\tScore of player1: {score1}")
                 if score1 > score2:
@@ -130,7 +130,7 @@ while True:
                     game = False
             else:
                 print("\n\tPlayer1 is out")
-                print("\n\tPlayer2 wins")
+                print("\n\tBot wins")
                 break
 
     again = input("\nDo you want to play again ? (y or n)")
